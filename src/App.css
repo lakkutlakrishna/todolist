@@ -57,3 +57,36 @@ body {
     text-decoration: line-through;
     color: gray;
   }
+  .calculator-overlay {
+    position: relative;
+    top: 20%;
+    left: 10%;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+  }
+  .task-item {
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  .task-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15) !important;
+  }
+  
+  input[type="text"], input[type="datetime-local"] {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  button {
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    opacity: 0.9;
+  }
+  
